@@ -1,6 +1,8 @@
 package com.example.jpetstore.domain;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 @SuppressWarnings("serial")
 public class Item implements Serializable {
@@ -18,6 +20,7 @@ public class Item implements Serializable {
   private String attribute5;
   private Product product;
   private int quantity;
+  private ArrayList<AuctionItem> acutionItem = new ArrayList<AuctionItem>();
 
   /* JavaBeans Properties */
   public String getItemId() { return itemId; }
@@ -54,8 +57,14 @@ public class Item implements Serializable {
   public void setAttribute4(String attribute4) { this.attribute4 = attribute4; }
   public String getAttribute5() { return attribute5; }
   public void setAttribute5(String attribute5) { this.attribute5 = attribute5; }
-
-  public String toString() {
+  
+  public ArrayList<AuctionItem> getAcutionItem() {
+	return acutionItem;
+  }
+  public void setAcutionItem(ArrayList<AuctionItem> acutionItem) {
+	this.acutionItem = acutionItem;
+  }
+public String toString() {
     return "(" + getItemId().trim() + "-" + getProductId().trim() + ")";
   }
 }
