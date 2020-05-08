@@ -44,12 +44,12 @@
       ATTR4 AS attribute4,
       ATTR5 AS attribute5,
       QTY AS quantity,
-      AID AS auctionId,
+    <!--  AID AS auctionId,
       DEAD AS deadline,
-      DPS AS deposit
-    FROM ITEM I, INVENTORY V, PRODUCT P, A_ITEM A
+      DPS AS deposit -->
+    FROM ITEM I, INVENTORY V, PRODUCT P
     WHERE P.PRODUCTID = I.PRODUCTID
-      AND I.ITEMID = A.ITEMID
+    
       AND I.ITEMID = V.ITEMID
       AND I.ITEMID = #{value}
   </select>
