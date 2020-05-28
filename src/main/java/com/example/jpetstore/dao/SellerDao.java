@@ -1,5 +1,6 @@
 package com.example.jpetstore.dao;
 
+
 import java.util.List;
 import org.springframework.dao.DataAccessException;
 import com.example.jpetstore.domain.Account;
@@ -16,5 +17,8 @@ public interface SellerDao {
   
   List<String> getUsernameList() throws DataAccessException;
   
+
+public interface SellerDao {
+
 
 }
