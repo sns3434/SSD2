@@ -6,4 +6,5 @@ public interface AuctionDao {
 	
 	void MaxBidding(int money, String bidder);
 	
+	
 }
