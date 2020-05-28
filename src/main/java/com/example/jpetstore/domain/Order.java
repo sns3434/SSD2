@@ -41,6 +41,7 @@ public class Order implements Serializable {
 
   /* JavaBeans Properties */
 
+  
   public int getOrderId() { return orderId; }
   public void setOrderId(int orderId) { this.orderId = orderId; }
 
