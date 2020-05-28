@@ -44,6 +44,6 @@ public class AuctionItem implements Serializable{
 	}
 	
 	  
-	  
+  
 
 }

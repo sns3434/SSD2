@@ -15,5 +15,6 @@ public interface SellerDao {
   void updateAccount(Account account) throws DataAccessException;
   
   List<String> getUsernameList() throws DataAccessException;
+  
 
 }
